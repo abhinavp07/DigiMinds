@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    font-family: "Figtree", "Figtree Placeholder", sans-serif;
+    font-style: normal;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 600px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 5px 10px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #151b36;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 65px;
+}
+
+.card .bg-image img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0 70%);
+}
+
+.card .pic img{
+    height: 160px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid rgb(21, 27, 54);
+    margin-top: -90px;
+    position: relative;
+}
+
+.card .info h3{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.card .info span{
+    font-size: 15px;
+    color: #007EFF;
+}
+
+.card .info p{
+    font-size: 13px;
+    padding: 10px 20px;
+    color: #999;
+}
+
+.card .info .icons a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #007EFF;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+.card .info .icons a:hover{
+    color: #999;
+}
+
+
+body{
+    line-height: 1.5;
+    background-color: white;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+/*****************************  nevigation bar ****************************/
+.nevbar{
+    width: 100%;
+    /*position: fixed;*/
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    background-color: white;/*#24262b*/
+    height: 85px;
+    border-top: white;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.logo a img{
+    margin-top: -138px;
+    margin-left: -15px;
+    width: 370px;
+    height: 370px;
+}
+.logo a h1{
+    margin: 15px 100px;
+}
+.logo a h1 span{
+    color: #007EFF;
+}
+.menu{
+    flex: 1;
+    text-align:right;
+    margin-top: 28px;
+    margin-right: 70px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu ul li span{
+    color: #007EFF;
+}
+
+.menu ul li j{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    
+    
+}
+
+
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.menu ul li a span{
+    color: black;
+}
+.menuicon{
+    margin: auto;
+    color: white;
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+
+
+/* navbar mobile view */
+@media only screen and (max-width : 700px){
+    .nevbar{
+        background-color: rgb(20, 28, 62);
+    }
+    .logo a h1{
+        margin: 15px 12px;
+    }
+    .menu{
+        text-align: right;
+        margin-right: 0px;
+        position:absolute;
+        background-color: rgb(20, 28, 62);
+        width: 100%;
+        top: 49px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+        transition: .5s;
+    }
+    .menu ul li{
+        list-style: none;
+        display: block;
+        margin: 25px 40px 35px auto;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        font-size: 15px;
+        transition: 0.5s;
+        font-size: 18px;
+    }
+    .menuicon{
+        display: block;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+    }
+
+}
+
+/* https://source.unsplash.com/1600x900/?healthcare */
+/**************  background cover image  ***************/
+.cover {
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('https://t4.ftcdn.net/jpg/01/34/88/19/360_F_134881906_gdIsbeci13e4p6XZ3Kn0l0MYmrueJ20q.jpg');*/
+    background-color: #24262b;
+    z-index: -200; 
+    color: white;
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+
+/****************************** FOOTER **************************/
+.footer{
+    background-color: white; /**  #24262b   **/
+    padding: 70px 0;
+    height: 170px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color:black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#007EFF;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #007EFF;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+
+
+
+ul{
+    list-style: none;
+    
+    }
+
+
+.LOGO{
+    margin-top: -260px;
+    float: right;
+    width: 405px;
+    height: 405px;
+    justify-content: right;
+    margin-left: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-logo{
+    width: 13%;
+    margin-left: 100px;
+    margin-top: 5px;
+
+}
+
+
+
+.copyright{
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+

@@ -16,20 +16,38 @@
 }
 
 .card{
-    height: 600px;
-    width: 300px;
+    height: 635px;
+    width: 375px;
     margin: 20px;
     box-shadow: 0 5px 10px #000;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     background-color: #151b36;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
 }
 
-h1{
+.card.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-title h1{
     text-align: center;
     color: black;
     font-size: 65px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.team-title h1.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card .bg-image img{
@@ -236,7 +254,7 @@ html {
 /****************************** FOOTER **************************/
 .footer{
     background-color: white; /**  #24262b   **/
-    padding: 70px 0;
+    padding: 60px 0;
     height: 170px;
 }
 .row{
@@ -318,7 +336,7 @@ ul{
 
 
 .LOGO{
-    margin-top: -260px;
+    margin-top: -300px;
     float: right;
     width: 405px;
     height: 405px;
@@ -348,10 +366,14 @@ ul{
 
 
 .copyright{
+    z-index: -1000;
     justify-content: center;
     text-align: center;
     background-color: white;
     color: black;
+    margin: 150px;
+    margin-bottom: 5px;
+    margin-top: 130px;
 }
 
 

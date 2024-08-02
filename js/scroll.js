@@ -38,6 +38,20 @@ $(document).ready(function() {
     })
         .setClassToggle('.contact', 'show')
         .addTo(controller);
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.team-title h1',
+        reverse: false
+    })
+        .setClassToggle('.team-title h1', 'show')
+        .addTo(controller);
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.card',
+        reverse: false
+    })
+        .setClassToggle('.card', 'show')
+        .addTo(controller);
           
            
 

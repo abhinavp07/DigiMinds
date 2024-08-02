@@ -52,7 +52,21 @@ $(document).ready(function() {
     })
         .setClassToggle('.card', 'show')
         .addTo(controller);
-          
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.program-head h1',
+        reverse: false
+    })
+        .setClassToggle('.program-head h1', 'show')
+        .addTo(controller);
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.program-details',
+        reverse: false
+    })
+        .setClassToggle('.program-details', 'show')
+        .addTo(controller);
+        
            
 
         

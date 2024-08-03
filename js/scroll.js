@@ -66,6 +66,13 @@ $(document).ready(function() {
     })
         .setClassToggle('.program-details', 'show')
         .addTo(controller);
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.note p',
+        reverse: false
+    })
+        .setClassToggle('.note p', 'show')
+        .addTo(controller);
         
            
 

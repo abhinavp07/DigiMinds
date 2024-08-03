@@ -955,4 +955,8 @@ ul{
         display: none;
     }
 
+    .cover{
+        display: none;
+    }
+
 }

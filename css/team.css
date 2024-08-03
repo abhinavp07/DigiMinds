@@ -376,5 +376,29 @@ ul{
     margin-top: 130px;
 }
 
+@media only screen and (max-width: 700px)
+{
+    .nevbar{
+        display: none;
+    }
+
+    .team-title{
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+}
+
 
 

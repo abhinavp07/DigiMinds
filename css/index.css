@@ -959,4 +959,24 @@ ul{
         display: none;
     }
 
+    .about{
+        display: none;
+    }
+
+    .service{
+        display: none;
+    }
+
+    .finalask{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+
 }

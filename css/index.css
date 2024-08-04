@@ -928,6 +928,7 @@ ul{
     }
 
     .information-fade-in .mobile-button{
+        visibility: visible;
         padding: 8px 15px;
         font-size: 18px;
         font-weight: 600;

@@ -17,54 +17,7 @@ font-weight: 450;
 }
 
 
-.line1{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    z-index: 0;
-    margin-left: 180px;
-}
 
-.line2{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line3{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line4{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line5{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line6{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line7{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
-
-.line8{
-    border-left: 1px solid rgb(239, 238, 238);
-    height: 1000px;
-    margin-left: 180px;
-}
 
 
 
@@ -949,14 +902,93 @@ ul{
 }
 
 
+
+
 @media only screen and (max-width: 700px)
 {
+
+    html,body{
+        overflow-x: hidden;
+    }
+
     .nevbar{
         display: none;
     }
 
-    .cover{
+    .information-fade-in h3{
         display: none;
+    }
+
+    .information-fade-in .program{
+        display: none;
+    }
+
+    .information-fade-in .mission{
+        display: none;
+    }
+
+    .information-fade-in .mobile-button{
+        padding: 8px 15px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #007EFF;
+        color: black;
+        border: 2px solid;
+        border-color: black;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: all 0.4s ease;
+        top: 5px;
+        margin-left: 145px;
+    }
+
+    .cover{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1s ease;
+    }
+
+    .cover img{
+        width: 210x;
+        height: 210px;
+        margin-top: 23px;
+        z-index: -100;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .information-fade-in .digiminds-logo{
+        margin-left: 95px;
+        margin-top: -70px;
+        margin-bottom: -110px;
+        width: 215px;
+        height: 215px;
+    }
+
+
+    .cover.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .information-fade-in h1{
+        max-width: 390px;
+        font-size: 45px;
+        line-height: 55px;
+        margin: 30px;
+        font-weight: 550;
+        letter-spacing: normal;
+        margin-right: 0px;
+    }
+
+    .information-fade-in h4{
+        font-size: 18px;
+        color: black;
+        max-width: 380px;
+        font-weight: 300;
+        margin: 30px;
     }
 
     .about{

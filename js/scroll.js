@@ -73,6 +73,13 @@ $(document).ready(function() {
     })
         .setClassToggle('.note p', 'show')
         .addTo(controller);
+
+    var ourScene = new ScrollMagic.Scene({
+        triggerElement: '.cover',
+        reverse: false
+    })
+        .setClassToggle('.cover', 'show')
+        .addTo(controller);
         
            
 

@@ -108,7 +108,7 @@ html {
 .program-head h1{
     text-align: center;
     font-size: 60px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 30px;
     opacity: 0;
     transform: translateY(100px);
@@ -121,6 +121,7 @@ html {
 }
 
 .program-details{
+    margin-top: -5px;
     justify-items: left;
     align-items: center;
     display:list-item;
@@ -149,7 +150,8 @@ html {
 .note p{
 font-size: 20px;
 text-align: center;
-padding-bottom: 20px;
+padding-bottom: 15px;
+margin-top: -20px;
 opacity: 0;
 transform: translateY(100px);
 transition: all 1s ease;

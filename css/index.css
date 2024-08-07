@@ -362,7 +362,7 @@ html {
     height: 475px;
     top: 30px;
     width: 535px;
-    margin-left: 115px;
+    margin-left: 20%; /*115px*/
     border: 2px solid;
     border-color: black;
 }
@@ -371,7 +371,7 @@ html {
 
 /* about content */
 .about .aboutcontent {
-    margin-top: -60px;
+    margin-top: -4.5%; /*-60px*/
     width: 50%;
     padding: 80px 10% 80px 16%;
     color: black;

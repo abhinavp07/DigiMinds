@@ -121,7 +121,7 @@ html {
 }
 
 .program-details{
-    margin-top: 1%; /*-5px*/
+    margin-top: -1.5%; /*-5px*/
     justify-items: left;
     align-items: center;
     display:list-item;
